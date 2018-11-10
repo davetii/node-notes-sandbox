@@ -1,6 +1,5 @@
 const path = require('path');
 
-const APP_JSON = 'app.json';
 const DEFAULT_APP_ROOT_FOLDER_NAME = '.notesexp';
 
 
@@ -14,7 +13,6 @@ const getSpace = (spaceName = 'space') => (
 
 module.exports = {
 
-    APP_JSON: APP_JSON,
     DEFAULT_APP_ROOT_FOLDER_NAME: DEFAULT_APP_ROOT_FOLDER_NAME,
     getDefaultDataDir, getSpace
 };
