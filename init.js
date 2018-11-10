@@ -3,7 +3,7 @@ const fs = require('fs');
 const app = require('./app.js');
 
 const createAppFile = (appFile, appJSON, callback) => {
-    fs.appendFile( appFile, JSON.stringify(appJSON), function (err) {
+    fs.appendFile( appFile, JSON.stringify(appJSON, undefined, 2), function (err) {
         if (err) throw err;
         callback(appJSON);
     });
